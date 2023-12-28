@@ -6,5 +6,25 @@
 public class OneOfEach {
 	public static void main (String[] args) {
 		//// Put your code here
+		boolean boy = false;
+		boolean girl = false;
+		char gender;
+		int sum = 0;
+
+		while(boy == false || girl == false ){
+			int child = (int)(Math.random() * 2);
+			sum++;
+			if(child == 0){
+				gender = 'b';
+				boy = true;
+			}
+			else{
+				gender = 'g';
+				girl = true;
+			}
+			System.out.print(gender + " ");
+		}
+		System.out.println();
+		System.out.println("You made it... and you have " + sum + " children");
 	}
 }
