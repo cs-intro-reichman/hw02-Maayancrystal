@@ -11,18 +11,14 @@ public class Perfect {
 		String add;
 		
 
-		for (int divisor = 2 ; divisor < (n-1) ; divisor++) { 
-			System.out.println("divisor" + divisor);
+		for (int divisor = 2 ; divisor <= (n-1) ; divisor++) { 
 			if (n % divisor == 0){ //checks if divisor is a divider of n
 				add = " + " + divisor;
-				System.out.println(add);
 				isPerfect = isPerfect + add;
-				System.out.println(isPerfect);
 				sum = sum + divisor;
-				System.out.println(sum);
+				
 			}
 		}
-
 
 		if (n == sum) { //checks if n is perfect
 				System.out.println(isPerfect);
