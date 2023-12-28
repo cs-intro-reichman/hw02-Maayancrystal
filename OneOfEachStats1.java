@@ -20,10 +20,10 @@ public class OneOfEachStats1 {
 			int numberOfChildren = 0;
 			
 			while(boy == false || girl == false ){
-				int child = (int)(Math.random() * 2);
+				double child = Math.random();
 				numberOfChildren++;
 
-				if(child == 0){
+				if(child < 0.5){
 					gender = 'b';
 					boy = true;
 				}
@@ -51,12 +51,23 @@ public class OneOfEachStats1 {
 		}
 
 	double avg = totalChildren / T;
+
 	System.out.println("Average: " + avg + " children to get at least one of each gender.");
 	System.out.println("Number of families with 2 children: " + twoChild );
 	System.out.println("Number of families with 3 children: " + threeChild);
 	System.out.println("Number of families with 4 children: " + fourChild);
-	
-	//System.out.println("The most common number of children is " + );
+	if((twoChild > threeChild) && (twoChild > fourChild)){ //2 children is most common
+			System.out.println("The most common number of children is 2");
+		}
+		else{
+			if(threeChild > fourChild){
+				System.out.println("The most common number of children is 3");	
+			}
+			else{
+				System.out.println("The most common number of children is 4 or more");	
+			}
+		}
+	}
 
 	}
-}
+

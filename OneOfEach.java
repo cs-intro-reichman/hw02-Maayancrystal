@@ -12,9 +12,9 @@ public class OneOfEach {
 		int sum = 0;
 
 		while(boy == false || girl == false ){
-			int child = (int)(Math.random() * 2);
+			double child = Math.random();
 			sum++;
-			if(child == 0){
+			if(child < 0.5){
 				gender = 'b';
 				boy = true;
 			}
