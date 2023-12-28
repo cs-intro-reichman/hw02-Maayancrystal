@@ -42,8 +42,8 @@ public class OneOfEachStats {
 			}
 
 			totalChildren = totalChildren + numberOfChildren;
-			if(numberOfChildren == 2){
-			twoChild++;
+			if(numberOfChildren >= 4){
+			fourChild++;
 			}
 			else{
 				if(numberOfChildren == 3){
@@ -51,7 +51,7 @@ public class OneOfEachStats {
 				}
 				else {
 					if(numberOfChildren == 4){
-					fourChild++;
+					twoChild++;
 					}
 				}
 			}	
