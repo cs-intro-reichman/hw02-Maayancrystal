@@ -50,7 +50,7 @@ public class OneOfEachStats {
 				threeChild++;
 				}
 				else {
-					if(numberOfChildren == 4){
+					if(numberOfChildren == 2){
 					twoChild++;
 					}
 				}
