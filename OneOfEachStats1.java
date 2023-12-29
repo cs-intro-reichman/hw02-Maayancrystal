@@ -8,16 +8,16 @@ public class OneOfEachStats1 {
 	public static void main (String[] args) {
 		//// Put your code here
 		int T = Integer.parseInt(args[0]);
-		int twoChild = 0;
-		int threeChild = 0;
-		int fourChild = 0;
-		int totalChildren = 0;
+		int twoChild = 0; //count the number of families with 2 kids
+		int threeChild = 0; //count the number of families with 3 kids
+		int fourChild = 0; //count the number of families with 4 or more kids.
+		int totalChildren = 0; //count the total number of kids is all of the families
 
-		for(int t = 0 ; t <= T ; t++){
+		for(int t = 1 ; t <= T ; t++){
 			boolean boy = false;
 			boolean girl = false;
 			char gender;
-			int numberOfChildren = 0;
+			int numberOfChildren = 0; //count the number of kids of a specific family
 			
 			while(boy == false || girl == false ){
 				double child = Math.random();
@@ -38,16 +38,14 @@ public class OneOfEachStats1 {
 			if(numberOfChildren >= 4){
 			fourChild++;
 			}
-			else{
-				if(numberOfChildren == 3){
+			else if(numberOfChildren == 3){
 				threeChild++;
 				}
-				else {
-					if(numberOfChildren == 2){
+				else if(numberOfChildren == 2){
 					twoChild++;
-					}
+					
 				}
-			}	
+				
 		}
 
 	double avg = (double)totalChildren / T;
