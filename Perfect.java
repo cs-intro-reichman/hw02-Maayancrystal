@@ -11,7 +11,8 @@ public class Perfect {
 		String add;
 		
 
-		for (int divisor = 2 ; divisor <= (n-1) ; divisor++) { 
+		// #feedback: you could stop earlier (n/2)
+		for (int divisor = 2 ; divisor <= n=2 ; divisor++) { 
 			if (n % divisor == 0){ //checks if divisor is a divider of n
 				add = " + " + divisor;
 				isPerfect = isPerfect + add;
