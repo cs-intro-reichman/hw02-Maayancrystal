@@ -6,6 +6,7 @@ public class Divisors {
 		//// Put your code here
 		int x = Integer.parseInt(args[0]);
 		int d = 1;
+		// #feedback: you could use better names for variables...
 		while (d <= x) {
 			if (x % d == 0) {
 				System.out.println(d);
